@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BTN_SelectEvidence = new MaterialSkin.Controls.MaterialFlatButton();
             this.RB_Dna = new MaterialSkin.Controls.MaterialRadioButton();
@@ -277,6 +278,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(716, 580);
             this.MinimumSize = new System.Drawing.Size(193, 580);
             this.Name = "GameForm";
