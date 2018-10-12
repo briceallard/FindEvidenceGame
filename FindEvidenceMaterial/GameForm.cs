@@ -41,7 +41,7 @@ namespace FindEvidenceMaterial
             int ButtonHeight = 48;
             int start_x = 88;
             int start_y = 200;
-
+            
             Button[,] tmpButton = new Button[x, y];
 
             for (int i = 0; i < x; i++)
@@ -52,12 +52,25 @@ namespace FindEvidenceMaterial
                     tmpButton[i, j].Top = start_x + (i * ButtonHeight);
                     tmpButton[i, j].Left = start_y + (j * ButtonWidth);
                     tmpButton[i, j].Width = ButtonWidth;
+                    tmpButton[i, j].Tag = $"{i},{j}";
                     tmpButton[i, j].Height = ButtonHeight;
+                    tmpButton[i, j].FlatStyle = FlatStyle.Flat;
+                    tmpButton[i, j].FlatAppearance.BorderSize = 1;
+                    tmpButton[i, j].FlatAppearance.BorderColor = Color.Black;
                     tmpButton[i, j].Text = "X: " + i.ToString() + "\nY: " + j.ToString();
-                    // Possible add Buttonclick event etc..
+                    tmpButton[i, j].Click += new EventHandler(BTN_Grid_Click);
                     this.Controls.Add(tmpButton[i, j]);
                 }
             }
+        }
+
+        private void BTN_Grid_Click(object sender, EventArgs e)
+        {
+            string[] coords = ((Button)sender).Tag.ToString().Split(',');
+            int x = Int32.Parse(coords[0]);
+            int y = Int32.Parse(coords[1]);
+
+            MessageBox.Show($"You clicked on:\nX: {x} Y: {y}");
         }
 
         private void BTN_Exit_Click(object sender, EventArgs e)
