@@ -249,6 +249,7 @@
             this.BTN_Start.TabIndex = 5;
             this.BTN_Start.Text = "Start";
             this.BTN_Start.UseVisualStyleBackColor = true;
+            this.BTN_Start.Click += new System.EventHandler(this.BTN_Start_Click);
             // 
             // LBL_MaxSize
             // 

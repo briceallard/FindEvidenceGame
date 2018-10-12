@@ -120,18 +120,18 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PB_Fingerprint.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAJRSURBVEhL3dRJSFVhGIfxWzYg0WSUFhYuIqIUGxwIiiITLKpF0CAtdBvppk0RFA04FDRRRMMi
-        jDa6KYUiooFogkIpcJFGRCmWaVRC1Cbqee45F1p41EM7//Djnnvuuef7zvu930mM+ixFDR7hM37jD/rC
-        c0eRh9iZh8d4jzqsQxbSQplYC3/rwgPMxYjjzbZhHKZhM/bjVMhjz02F12yHg8aKj96I77iDY9gTOo67
-        GIDXxCqTM/LRP8GbOUvjk+RiESZ7gvib1/TC//jfITMBN+CMZ8Ib7UU7fqATb/ATrdiNiZiFe7iO8YjM
-        RTiAF62BC9iEVfh3dk6kFLfQgfzwnN8vYNCMwWVMwnrYin4ab2Ddb4bqsRhmJ2zhAkzBGQyZbPQjNeuz
-        6MERbArZ/x9xArbtFtjSDjBsLsHZmvNwPVxMa+2gK+DA03EfJ2Gu4mBwGB1rb1vOxjJ0w1ktxwc8xQu4
-        2AtgZ/kkdpdlfAdLHRlb8HVwmKzzYYyFnWMZUtkFBzO2p+Xzxq7FHERmJR4Gh8nucYe6Js7SVMOBrPsv
-        pKMcDTCvsCQ4HDyFeB4cJq6hAjPwDc7wANzRpg0bYFktla+Xr8hAZNwwX+DNfOza8Nj9sBBFeAt7vgSW
-        xGvcjJ7fh2HjQrlovi1fwgFsx9MwLbB1Pe9CH4JdtxojijPfAevsrNyxdpUbrxi25zPcRhlc1BxYptjZ
-        Cl8F7m5fz74A3QeWqApP4MC2cyVixzK42M1wMTfCup+Drwp//++4g69gfvJb0AjuERc+9a4atUkk/gKN
-        lHk9VWxw+QAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAlFJREFUSEvd
+        1ElIVWEYh/FbNiDRZJQWFi4iohQbHAiKIhMsqkXQIC10G+mmTREUDTgUNFFEwyKMNrophSKigWiCQilw
+        kUZEKZZpVELUJup57jkXWnjUQzv/8OOee+655/vO+73fSYz6LEUNHuEzfuMP+sJzR5GH2JmHx3iPOqxD
+        FtJCmVgLf+vCA8zFiOPNtmEcpmEz9uNUyGPPTYXXbIeDxoqP3ojvuINj2BM6jrsYgNfEKpMz8tE/wZs5
+        S+OT5GIRJnuC+JvX9ML/+N8hMwE34IxnwhvtRTt+oBNv8BOt2I2JmIV7uI7xiMxFOIAXrYEL2IRV+Hd2
+        TqQUt9CB/PCc3y9g0IzBZUzCetiKfhpvYN1vhuqxGGYnbOECTMEZDJls9CM167PowRFsCtn/H3ECtu0W
+        2NIOMGwuwdma83A9XExr7aAr4MDTcR8nYa7iYHAYHWtvW87GMnTDWS3HBzzFC7jYC2Bn+SR2l2V8B0sd
+        GVvwdXCYrPNhjIWdYxlS2QUHM7an5fPGrsUcRGYlHgaHye5xh7omztJUw4Gs+y+koxwNMK+wJDgcPIV4
+        HhwmrqECM/ANzvAA3NGmDRtgWS2Vr5evyEBk3DBf4M187Nrw2P2wEEV4C3u+BJbEa9yMnt+HYeNCuWi+
+        LV/CAWzH0zAtsHU970Ifgl23GiOKM98B6+ys3LF2lRuvGLbnM9xGGVzUHFim2NkKXwXubl/PvgDdB5ao
+        Ck/gwLZzJWLHMrjYzXAxN8K6n4OvCn//77iDr2B+8lvQCO4RFz71rhq1SST+Ao2UeT1VbHD5AAAAAElF
+        TkSuQmCC
 </value>
   </data>
   <data name="PB_MagGlass.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

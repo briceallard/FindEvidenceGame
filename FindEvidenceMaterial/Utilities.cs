@@ -13,10 +13,12 @@ namespace FindEvidenceMaterial
         private static string SETTINGS_PATH;
         private static int MAX_X;
         private static int MAX_Y;
+        private static int CASE_NUM;
 
         public static string SettingsPath { get => SETTINGS_PATH; set => SETTINGS_PATH = @value; }
         public static int MaxX { get => MAX_X; set => MAX_X = value; }
         public static int MaxY { get => MAX_Y; set => MAX_Y = value; }
+        public static int CaseNum { get => CASE_NUM; set => CASE_NUM = value; }
 
         public static void ReadSettings()
         {
@@ -25,6 +27,9 @@ namespace FindEvidenceMaterial
                 string[] lines = File.ReadAllLines(SETTINGS_PATH);
                 MaxX = Int32.Parse(lines[0]);
                 MaxY = Int32.Parse(lines[1]);
+                CaseNum = Int32.Parse(lines[2]) + 1;
+                lines[2] = CaseNum.ToString();
+                File.WriteAllLines(SettingsPath, lines);
                 MessageBox.Show(FILE_SUCCESS, SUCCESS_TITLE, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch

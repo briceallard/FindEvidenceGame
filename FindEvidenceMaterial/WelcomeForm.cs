@@ -53,6 +53,17 @@ namespace FindEvidenceMaterial
             PB_Fingerprint.Visible = false;
         }
 
+        private void BTN_Start_Click(object sender, EventArgs e)
+        {
+            GameForm.X = Int32.Parse(TB_GRIDX.Text);
+            GameForm.Y = Int32.Parse(TB_GRIDY.Text);
+
+            GameForm gameForm = new GameForm();
+            this.Hide();
+            gameForm.ShowDialog();
+            this.Close();
+        }
+
         private void BTN_Close_Click(object sender, EventArgs e)
         {
             Application.Exit();
