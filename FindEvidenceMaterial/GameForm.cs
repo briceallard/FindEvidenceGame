@@ -37,8 +37,8 @@ namespace FindEvidenceMaterial
 
         private void GenerateGrid()
         {
-            int ButtonWidth = 50;
-            int ButtonHeight = 50;
+            int ButtonWidth = 48;
+            int ButtonHeight = 48;
             int start_x = 88;
             int start_y = 200;
 
