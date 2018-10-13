@@ -55,13 +55,18 @@ namespace FindEvidenceMaterial
 
         private void BTN_Start_Click(object sender, EventArgs e)
         {
-            GameForm.X = Int32.Parse(TB_GRIDX.Text);
-            GameForm.Y = Int32.Parse(TB_GRIDY.Text);
+            if (Utilities.Settings)
+            {
+                GameForm.X = Int32.Parse(TB_GRIDX.Text);
+                GameForm.Y = Int32.Parse(TB_GRIDY.Text);
 
-            GameForm gameForm = new GameForm();
-            this.Hide();
-            gameForm.ShowDialog();
-            this.Close();
+                GameForm gameForm = new GameForm();
+                this.Hide();
+                gameForm.ShowDialog();
+                this.Close();
+            }
+            else
+                MessageBox.Show(Utilities.NOFILE_ERROR, Utilities.ERROR_TITLE, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void BTN_Close_Click(object sender, EventArgs e)

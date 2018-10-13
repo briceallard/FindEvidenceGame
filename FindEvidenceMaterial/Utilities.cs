@@ -11,11 +11,13 @@ namespace FindEvidenceMaterial
     class Utilities
     {
         private static string SETTINGS_PATH;
+        private static bool SETTINGS;
         private static int MAX_X;
         private static int MAX_Y;
         private static int CASE_NUM;
 
         public static string SettingsPath { get => SETTINGS_PATH; set => SETTINGS_PATH = @value; }
+        public static bool Settings { get => SETTINGS; set => SETTINGS = value; }
         public static int MaxX { get => MAX_X; set => MAX_X = value; }
         public static int MaxY { get => MAX_Y; set => MAX_Y = value; }
         public static int CaseNum { get => CASE_NUM; set => CASE_NUM = value; }
@@ -30,6 +32,7 @@ namespace FindEvidenceMaterial
                 CaseNum = Int32.Parse(lines[2]) + 1;
                 lines[2] = CaseNum.ToString();
                 File.WriteAllLines(SettingsPath, lines);
+                Settings = true;
                 MessageBox.Show(FILE_SUCCESS, SUCCESS_TITLE, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
