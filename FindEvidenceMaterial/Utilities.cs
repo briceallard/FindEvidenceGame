@@ -41,6 +41,14 @@ namespace FindEvidenceMaterial
             }
         }
 
+        public static int GenerateRandom(int min, int max)
+        {
+            Random random = new Random(Guid.NewGuid().GetHashCode());
+            int rand = random.Next(min, max);
+
+            return rand;
+        }
+
         public static string FILE_ERROR
         {
             get

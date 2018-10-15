@@ -55,6 +55,7 @@
     <Compile Include="GameForm.Designer.cs">
       <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Scanalyzer.cs" />
     <Compile Include="Utilities.cs" />
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
@@ -78,6 +79,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -94,7 +96,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\arrow_back_black_48x48.png" />
+    <None Include="Resources\arrow_downward_black_48x48.png" />
+    <None Include="Resources\arrow_forward_black_48x48.png" />
+    <None Include="Resources\arrow_upward_black_48x48.png" />
+    <None Include="Resources\fingerprint_black_48x48.png" />
+    <None Include="Resources\help_outline_black_48x48.png" />
+    <None Include="Resources\search_black_48x48.png" />
     <Content Include="Settings.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

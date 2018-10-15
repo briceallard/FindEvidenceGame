@@ -15,6 +15,7 @@ namespace FindEvidenceMaterial
 {
     public partial class GameForm : MaterialForm
     {
+        Scanalyzer scanalyzer = new Scanalyzer();
         private static int x;
         private static int y;
 
@@ -32,10 +33,11 @@ namespace FindEvidenceMaterial
 
             this.Text = $"Case #{Utilities.CaseNum} - Murder Scene";
             RB_Weapon.Select();
-            GenerateGrid();
+            DrawGrid();
+            scanalyzer.GenerateClue();
         }
 
-        private void GenerateGrid()
+        private void DrawGrid()
         {
             int ButtonWidth = 48;
             int ButtonHeight = 48;
@@ -57,7 +59,6 @@ namespace FindEvidenceMaterial
                     tmpButton[i, j].FlatStyle = FlatStyle.Flat;
                     tmpButton[i, j].FlatAppearance.BorderSize = 1;
                     tmpButton[i, j].FlatAppearance.BorderColor = Color.Black;
-                    tmpButton[i, j].Text = "X: " + i.ToString() + "\nY: " + j.ToString();
                     tmpButton[i, j].Click += new EventHandler(BTN_Grid_Click);
                     this.Controls.Add(tmpButton[i, j]);
                 }
