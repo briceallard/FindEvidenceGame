@@ -67,11 +67,19 @@ namespace FindEvidenceMaterial
 
         private void BTN_Grid_Click(object sender, EventArgs e)
         {
+
             string[] coords = ((Button)sender).Tag.ToString().Split(',');
             int x = Int32.Parse(coords[0]);
             int y = Int32.Parse(coords[1]);
 
-            MessageBox.Show($"You clicked on:\nX: {x} Y: {y}");
+            Scanalyzer scanalyzer = new Scanalyzer();
+            Scanalyzer.Guess guess = new Scanalyzer.Guess(x, y);
+
+            if (scanalyzer.IsMatch())
+                MessageBox.Show(Utilities.FOUND_MESSAGE, Utilities.FOUND_TITLE, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            else
+                MessageBox.Show("Guess Again!");
+            //MessageBox.Show($"You clicked on:\nX: {x} Y: {y}");
         }
 
         private void BTN_Exit_Click(object sender, EventArgs e)

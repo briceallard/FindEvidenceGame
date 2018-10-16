@@ -32,6 +32,26 @@ namespace FindEvidenceMaterial
             }
         }
 
+        public class Guess
+        {
+            private static int x;
+            private static int y;
+
+            public static int X { get => x; set => x = value; }
+            public static int Y { get => y; set => y = value; }
+
+            public Guess()
+            {
+                X = Y = 0;
+            }
+
+            public Guess(int x, int y)
+            {
+                X = x;
+                Y = y;
+            }
+        }
+
         public void GenerateClue()
         {
             int randX = Utilities.GenerateRandom(0, Utilities.MaxX);
@@ -45,6 +65,11 @@ namespace FindEvidenceMaterial
         public void ClearClue()
         {
             Array.Clear(clue_loc, 0, clue_loc.Length);
+        }
+
+        public bool IsMatch()
+        {
+            return (Guess.X == Clue.X && Guess.Y == Clue.Y) ? true : false;
         }
     }
 }
