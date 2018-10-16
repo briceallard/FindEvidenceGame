@@ -11,3 +11,16 @@ C:\Users\brice\source\repos\FindEvidenceMaterial\FindEvidenceMaterial\obj\Debug\
 C:\Users\brice\source\repos\FindEvidenceMaterial\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.exe
 C:\Users\brice\source\repos\FindEvidenceMaterial\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.pdb
 C:\Users\brice\source\repos\FindEvidenceMaterial\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.csprojAssemblyReference.cache
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\bin\Debug\FindEvidenceMaterial.exe.config
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\bin\Debug\FindEvidenceMaterial.exe
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\bin\Debug\FindEvidenceMaterial.pdb
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\bin\Debug\MaterialSkin.dll
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.csprojAssemblyReference.cache
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.GameForm.resources
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.WelcomeForm.resources
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.Properties.Resources.resources
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.csproj.GenerateResource.cache
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.csproj.CoreCompileInputs.cache
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.csproj.CopyComplete
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.exe
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.pdb

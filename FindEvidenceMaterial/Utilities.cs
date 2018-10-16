@@ -88,5 +88,21 @@ namespace FindEvidenceMaterial
                 return "SUCCESS";
             }
         }
+
+        public static string FOUND_MESSAGE
+        {
+            get
+            {
+                return "Clue Found!";
+            }
+        }
+
+        public static string FOUND_TITLE
+        {
+            get
+            {
+                return "FOUND";
+            }
+        }
     }
 }
