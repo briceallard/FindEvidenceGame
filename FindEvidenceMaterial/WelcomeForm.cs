@@ -73,5 +73,11 @@ namespace FindEvidenceMaterial
         {
             Application.Exit();
         }
+
+        private void BTN_Highscore_Click(object sender, EventArgs e)
+        {
+            HighScore wf = new HighScore();
+            wf.ShowDialog();
+        }
     }
 }

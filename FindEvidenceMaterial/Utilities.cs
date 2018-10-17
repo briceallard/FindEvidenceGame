@@ -10,19 +10,12 @@ namespace FindEvidenceMaterial
 {
     class Utilities
     {
-        public static List<Score> Scores = new List<Score>();
-
         public static string SettingsPath { get; set; }
         public static bool Settings { get; set; }
         public static int MaxX { get; set; }
         public static int MaxY { get; set; }
         public static int CaseNum { get; set; }
-
-        public class Score
-        {
-            public string Initials { get; set; }
-            public int Number { get; set; }
-        }
+        public static int HighScore { get; set; }
 
         public static void ReadSettings()
         {
@@ -42,29 +35,6 @@ namespace FindEvidenceMaterial
                 MessageBox.Show(FILE_ERROR, ERROR_TITLE, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        public static void ReadScores()
-        {
-
-            using (StreamReader sr = new StreamReader(Properties.Resources.Scores))
-            {
-                while (sr.Peek() >= 0)
-                {
-                    string line = sr.ReadLine();
-                    string[] lines = line.Split('=');
-
-                    Score score = new Score();
-                    score.Initials = lines[0];
-                    score.Number = Int32.Parse(lines[1]);
-                    Scores.Add(score);
-                    Scores.Sort();
-                }
-            }
-
-
-        }
-
-        public static 
 
         public static int GenerateRandom(int min, int max)
         {

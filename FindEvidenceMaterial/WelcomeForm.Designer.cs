@@ -47,6 +47,7 @@
             this.TB_GRIDY = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.TB_GRIDX = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.LBL_GridSize = new MaterialSkin.Controls.MaterialLabel();
+            this.BTN_Highscore = new MaterialSkin.Controls.MaterialFlatButton();
             this.GB_Instructions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Fingerprint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_MagGlass)).BeginInit();
@@ -108,6 +109,7 @@
             // 
             // GB_Upload
             // 
+            this.GB_Upload.Controls.Add(this.BTN_Highscore);
             this.GB_Upload.Controls.Add(this.label1);
             this.GB_Upload.Controls.Add(this.BTN_Upload);
             this.GB_Upload.Controls.Add(this.LBL_Path);
@@ -323,6 +325,23 @@
             this.LBL_GridSize.TabIndex = 0;
             this.LBL_GridSize.Text = "Enter Search Grid Size:";
             // 
+            // BTN_Highscore
+            // 
+            this.BTN_Highscore.AutoSize = true;
+            this.BTN_Highscore.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BTN_Highscore.Depth = 0;
+            this.BTN_Highscore.Icon = null;
+            this.BTN_Highscore.Location = new System.Drawing.Point(294, 67);
+            this.BTN_Highscore.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BTN_Highscore.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BTN_Highscore.Name = "BTN_Highscore";
+            this.BTN_Highscore.Primary = false;
+            this.BTN_Highscore.Size = new System.Drawing.Size(108, 36);
+            this.BTN_Highscore.TabIndex = 7;
+            this.BTN_Highscore.Text = "High Scores";
+            this.BTN_Highscore.UseVisualStyleBackColor = true;
+            this.BTN_Highscore.Click += new System.EventHandler(this.BTN_Highscore_Click);
+            // 
             // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -371,6 +390,7 @@
         private MaterialSkin.Controls.MaterialFlatButton BTN_Start;
         private MaterialSkin.Controls.MaterialFlatButton BTN_Close;
         private System.Windows.Forms.PictureBox PB_Fingerprint;
+        private MaterialSkin.Controls.MaterialFlatButton BTN_Highscore;
     }
 }
 

@@ -1,5 +1,6 @@
 ﻿using MaterialSkin;
 using MaterialSkin.Controls;
+using MaterialSkin.Animations;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -28,6 +29,7 @@ namespace FindEvidenceMaterial
             this.Text = $"Case #{Utilities.CaseNum}";
 
             MessageBox.Show("Choose Evidence type to begin ...");
+            HighScore.ReadScores();
         }
 
         private void BTN_SelectEvidence_Click(object sender, EventArgs e)

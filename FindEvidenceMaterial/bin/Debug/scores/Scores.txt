@@ -1,10 +1,10 @@
-bwa=234
-dif=342
 twi=343
-wff=241
-eff=104
+dif=342
 efo=302
-fod=100
 fod=300
-tom=109
+wff=241
+bwa=234
 bri=185
+tom=109
+eff=104
+fod=100

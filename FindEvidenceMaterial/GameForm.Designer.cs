@@ -43,7 +43,7 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BTN_Exit = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BTN_StartNew = new MaterialSkin.Controls.MaterialFlatButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -227,7 +227,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.BTN_Exit);
-            this.groupBox3.Controls.Add(this.materialFlatButton1);
+            this.groupBox3.Controls.Add(this.BTN_StartNew);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(13, 440);
             this.groupBox3.Name = "groupBox3";
@@ -252,21 +252,21 @@
             this.BTN_Exit.UseVisualStyleBackColor = true;
             this.BTN_Exit.Click += new System.EventHandler(this.BTN_Exit_Click);
             // 
-            // materialFlatButton1
+            // BTN_StartNew
             // 
-            this.materialFlatButton1.AutoSize = true;
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Icon = null;
-            this.materialFlatButton1.Location = new System.Drawing.Point(14, 24);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = false;
-            this.materialFlatButton1.Size = new System.Drawing.Size(138, 36);
-            this.materialFlatButton1.TabIndex = 0;
-            this.materialFlatButton1.Text = "Start New Game";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.BTN_StartNew.AutoSize = true;
+            this.BTN_StartNew.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BTN_StartNew.Depth = 0;
+            this.BTN_StartNew.Icon = null;
+            this.BTN_StartNew.Location = new System.Drawing.Point(14, 24);
+            this.BTN_StartNew.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BTN_StartNew.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BTN_StartNew.Name = "BTN_StartNew";
+            this.BTN_StartNew.Primary = false;
+            this.BTN_StartNew.Size = new System.Drawing.Size(138, 36);
+            this.BTN_StartNew.TabIndex = 0;
+            this.BTN_StartNew.Text = "Start New Game";
+            this.BTN_StartNew.UseVisualStyleBackColor = true;
             // 
             // GameForm
             // 
@@ -305,7 +305,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private System.Windows.Forms.GroupBox groupBox3;
         private MaterialSkin.Controls.MaterialRaisedButton BTN_Exit;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        private MaterialSkin.Controls.MaterialFlatButton BTN_StartNew;
         public MaterialSkin.Controls.MaterialRadioButton RB_Weapon;
         public MaterialSkin.Controls.MaterialRadioButton RB_Fingerprint;
         public MaterialSkin.Controls.MaterialRadioButton RB_Dna;
