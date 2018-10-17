@@ -15,7 +15,6 @@ namespace FindEvidenceMaterial
 {
     public partial class GameForm : MaterialForm
     {
-        Scanalyzer scanalyzer = new Scanalyzer();
         private static int x;
         private static int y;
 
@@ -32,9 +31,53 @@ namespace FindEvidenceMaterial
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
 
             this.Text = $"Case #{Utilities.CaseNum} - Murder Scene";
-            RB_Weapon.Select();
+
+            Scanalyzer scanalyzer = GetScanalyzer();
             DrawGrid();
             scanalyzer.GenerateClue();
+
+            //if (RB_Weapon.Checked)
+            //{
+            //    Scanalyzer weapon = new Weapon();
+            //    DrawGrid();
+            //    weapon.GenerateClue();
+            //}
+            //else if (RB_Fingerprint.Checked)
+            //{
+            //    Scanalyzer fp = new Fingerprint();
+            //    DrawGrid();
+            //    fp.GenerateClue();
+            //}
+            //else if (RB_Dna.Checked)
+            //{
+            //    Scanalyzer dna = new DNA();
+            //}
+            //else
+            //    MessageBox.Show("No evidence type selected.");
+        }
+
+        public Scanalyzer GetScanalyzer()
+        {
+            GameForm gf = new GameForm();
+
+            if (gf.RB_Weapon.Checked)
+            {
+                Scanalyzer weapon = new Weapon();
+                return weapon;
+            }
+            else if (gf.RB_Fingerprint.Checked)
+            {
+                Scanalyzer fp = new Fingerprint();
+                return fp;
+            }
+            else if (gf.RB_Dna.Checked)
+            {
+                Scanalyzer dna = new DNA();
+                return dna;
+            }
+
+            Scanalyzer scanalyzer = new Weapon();
+            return scanalyzer;
         }
 
         private void DrawGrid()
@@ -72,8 +115,8 @@ namespace FindEvidenceMaterial
             int x = Int32.Parse(coords[0]);
             int y = Int32.Parse(coords[1]);
 
-            Scanalyzer scanalyzer = new Scanalyzer();
-            Scanalyzer.Guess guess = new Scanalyzer.Guess(x, y);
+            Scanalyzer scanalyzer = GetScanalyzer();
+            Guess guess = new Guess(x, y);
 
             if (scanalyzer.IsMatch())
                 MessageBox.Show(Utilities.FOUND_MESSAGE, Utilities.FOUND_TITLE, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
