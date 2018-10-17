@@ -93,7 +93,6 @@
             this.RB_Dna.Ripple = true;
             this.RB_Dna.Size = new System.Drawing.Size(57, 30);
             this.RB_Dna.TabIndex = 2;
-            this.RB_Dna.TabStop = true;
             this.RB_Dna.Text = "DNA";
             this.RB_Dna.UseVisualStyleBackColor = true;
             // 
@@ -111,13 +110,13 @@
             this.RB_Fingerprint.Ripple = true;
             this.RB_Fingerprint.Size = new System.Drawing.Size(96, 30);
             this.RB_Fingerprint.TabIndex = 1;
-            this.RB_Fingerprint.TabStop = true;
             this.RB_Fingerprint.Text = "Fingerprint";
             this.RB_Fingerprint.UseVisualStyleBackColor = true;
             // 
             // RB_Weapon
             // 
             this.RB_Weapon.AutoSize = true;
+            this.RB_Weapon.Checked = true;
             this.RB_Weapon.Depth = 0;
             this.RB_Weapon.Font = new System.Drawing.Font("Roboto", 10F);
             this.RB_Weapon.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -127,10 +126,10 @@
             this.RB_Weapon.MouseState = MaterialSkin.MouseState.HOVER;
             this.RB_Weapon.Name = "RB_Weapon";
             this.RB_Weapon.Ripple = true;
-            this.RB_Weapon.Size = new System.Drawing.Size(127, 30);
+            this.RB_Weapon.Size = new System.Drawing.Size(79, 30);
             this.RB_Weapon.TabIndex = 0;
             this.RB_Weapon.TabStop = true;
-            this.RB_Weapon.Text = "Murder Weapon";
+            this.RB_Weapon.Text = "Weapon";
             this.RB_Weapon.UseVisualStyleBackColor = true;
             // 
             // groupBox2
@@ -295,9 +294,6 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private MaterialSkin.Controls.MaterialRadioButton RB_Weapon;
-        private MaterialSkin.Controls.MaterialRadioButton RB_Fingerprint;
-        private MaterialSkin.Controls.MaterialRadioButton RB_Dna;
         private MaterialSkin.Controls.MaterialFlatButton BTN_SelectEvidence;
         private System.Windows.Forms.GroupBox groupBox2;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
@@ -309,5 +305,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private MaterialSkin.Controls.MaterialRaisedButton BTN_Exit;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        public MaterialSkin.Controls.MaterialRadioButton RB_Weapon;
+        public MaterialSkin.Controls.MaterialRadioButton RB_Fingerprint;
+        public MaterialSkin.Controls.MaterialRadioButton RB_Dna;
     }
 }
