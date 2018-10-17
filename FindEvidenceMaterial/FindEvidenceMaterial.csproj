@@ -101,20 +101,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\fingerprint_black_36x36.png" />
-    <Content Include="Resources\fingerprint_black_48x48.png" />
-    <Content Include="Resources\icons8-army-knife-36x36.png" />
-    <Content Include="Resources\icons8-army-knife-48x48.png" />
-    <Content Include="Resources\icons8-dna-helix-36x36.png" />
-    <Content Include="Resources\icons8-dna-helix-48x48.png" />
-    <Content Include="Resources\keyboard_arrow_down_black_36x36.png" />
-    <Content Include="Resources\keyboard_arrow_down_black_48x48.png" />
-    <Content Include="Resources\keyboard_arrow_left_black_36x36.png" />
-    <Content Include="Resources\keyboard_arrow_left_black_48x48.png" />
-    <Content Include="Resources\keyboard_arrow_right_black_36x36.png" />
-    <Content Include="Resources\keyboard_arrow_right_black_48x48.png" />
-    <Content Include="Resources\keyboard_arrow_up_black_36x36.png" />
-    <Content Include="Resources\keyboard_arrow_up_black_48x48.png" />
+    <None Include="bin\Debug\images\fingerprint_black_36x36.png" />
+    <None Include="bin\Debug\images\fingerprint_black_48x48.png" />
+    <None Include="bin\Debug\images\icons8-army-knife-36x36.png" />
+    <None Include="bin\Debug\images\icons8-army-knife-48x48.png" />
+    <None Include="bin\Debug\images\icons8-dna-helix-36x36.png" />
+    <None Include="bin\Debug\images\icons8-dna-helix-48x48.png" />
+    <None Include="bin\Debug\images\keyboard_arrow_down_black_36x36.png" />
+    <None Include="bin\Debug\images\keyboard_arrow_down_black_48x48.png" />
+    <None Include="bin\Debug\images\keyboard_arrow_left_black_36x36.png" />
+    <None Include="bin\Debug\images\keyboard_arrow_left_black_48x48.png" />
+    <None Include="bin\Debug\images\keyboard_arrow_right_black_36x36.png" />
+    <None Include="bin\Debug\images\keyboard_arrow_right_black_48x48.png" />
+    <None Include="bin\Debug\images\keyboard_arrow_up_black_36x36.png" />
+    <None Include="bin\Debug\images\keyboard_arrow_up_black_48x48.png" />
     <Content Include="Settings.txt" />
   </ItemGroup>
   <ItemGroup />

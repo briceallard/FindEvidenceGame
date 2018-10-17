@@ -18,9 +18,22 @@ namespace FindEvidenceMaterial
             MessageBox.Show(CreatedString());
         }
 
+        public override void Found(object sender, EventArgs e)
+        {
+            Button button = ((Button)sender);
+            button.BackgroundImage = FindEvidenceMaterial.Properties.Resources.fingerprint_black_36x36;
+            button.BackgroundImageLayout = ImageLayout.Center;
+            MessageBox.Show(FOUND_MESSAGE(), FOUND_TITLE, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
         public override string CreatedString()
         {
             return $"Fingerprint Created at [{Clue.X},{Clue.Y}]";
+        }
+
+        public override string FOUND_MESSAGE()
+        {
+            return "Fingerprint Found!";
         }
     }
 }

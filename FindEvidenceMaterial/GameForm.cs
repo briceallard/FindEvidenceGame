@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using MaterialSkin;
+﻿using MaterialSkin;
 using MaterialSkin.Controls;
-using MaterialSkin.Animations;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace FindEvidenceMaterial
 {
@@ -17,6 +10,8 @@ namespace FindEvidenceMaterial
     {
         private static int x;
         private static int y;
+        Scanalyzer scanalyzer;
+        Button[,] tmpButton = new Button[x, y];
 
         public static int X { get => x; set => x = value; }
         public static int Y { get => y; set => y = value; }
@@ -30,54 +25,22 @@ namespace FindEvidenceMaterial
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
 
-            this.Text = $"Case #{Utilities.CaseNum} - Murder Scene";
+            this.Text = $"Case #{Utilities.CaseNum}";
 
-            Scanalyzer scanalyzer = GetScanalyzer();
-            DrawGrid();
-            scanalyzer.GenerateClue();
-
-            //if (RB_Weapon.Checked)
-            //{
-            //    Scanalyzer weapon = new Weapon();
-            //    DrawGrid();
-            //    weapon.GenerateClue();
-            //}
-            //else if (RB_Fingerprint.Checked)
-            //{
-            //    Scanalyzer fp = new Fingerprint();
-            //    DrawGrid();
-            //    fp.GenerateClue();
-            //}
-            //else if (RB_Dna.Checked)
-            //{
-            //    Scanalyzer dna = new DNA();
-            //}
-            //else
-            //    MessageBox.Show("No evidence type selected.");
+            MessageBox.Show("Choose Evidence type to begin ...");
         }
 
-        public Scanalyzer GetScanalyzer()
+        private void BTN_SelectEvidence_Click(object sender, EventArgs e)
         {
-            GameForm gf = new GameForm();
+            if (RB_Weapon.Checked)
+                scanalyzer = new Weapon();
+            else if (RB_Fingerprint.Checked)
+                scanalyzer = new Fingerprint();
+            else
+                scanalyzer = new DNA();
 
-            if (gf.RB_Weapon.Checked)
-            {
-                Scanalyzer weapon = new Weapon();
-                return weapon;
-            }
-            else if (gf.RB_Fingerprint.Checked)
-            {
-                Scanalyzer fp = new Fingerprint();
-                return fp;
-            }
-            else if (gf.RB_Dna.Checked)
-            {
-                Scanalyzer dna = new DNA();
-                return dna;
-            }
-
-            Scanalyzer scanalyzer = new Weapon();
-            return scanalyzer;
+            scanalyzer.GenerateClue();
+            DrawGrid();
         }
 
         private void DrawGrid()
@@ -86,8 +49,7 @@ namespace FindEvidenceMaterial
             int ButtonHeight = 48;
             int start_x = 88;
             int start_y = 200;
-            
-            Button[,] tmpButton = new Button[x, y];
+
 
             for (int i = 0; i < x; i++)
             {
@@ -108,20 +70,34 @@ namespace FindEvidenceMaterial
             }
         }
 
-        private void BTN_Grid_Click(object sender, EventArgs e)
+        private void DeleteGrid()
+        {
+            for (int i = 0; i < x; i++)
+            {
+                for (int j = 0; j < y; j++)
+                {
+                    this.Controls.Remove(tmpButton[i, j]);
+                }
+            }
+        }
+
+        public void BTN_Grid_Click(object sender, EventArgs e)
         {
 
             string[] coords = ((Button)sender).Tag.ToString().Split(',');
             int x = Int32.Parse(coords[0]);
             int y = Int32.Parse(coords[1]);
 
-            Scanalyzer scanalyzer = GetScanalyzer();
             Guess guess = new Guess(x, y);
 
             if (scanalyzer.IsMatch())
-                MessageBox.Show(Utilities.FOUND_MESSAGE, Utilities.FOUND_TITLE, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            {
+                scanalyzer.Found(sender, e);
+                DeleteGrid();
+            }
             else
-                MessageBox.Show("Guess Again!");
+                MessageBox.Show("Guess again!");
+
             //MessageBox.Show($"You clicked on:\nX: {x} Y: {y}");
         }
 

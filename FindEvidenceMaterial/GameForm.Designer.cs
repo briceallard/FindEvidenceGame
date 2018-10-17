@@ -78,6 +78,7 @@
             this.BTN_SelectEvidence.TabIndex = 3;
             this.BTN_SelectEvidence.Text = "Select";
             this.BTN_SelectEvidence.UseVisualStyleBackColor = true;
+            this.BTN_SelectEvidence.Click += new System.EventHandler(this.BTN_SelectEvidence_Click);
             // 
             // RB_Dna
             // 
