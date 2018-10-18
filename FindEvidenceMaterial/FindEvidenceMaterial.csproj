@@ -115,6 +115,7 @@
     <None Include="bin\Debug\images\keyboard_arrow_right_black_48x48.png" />
     <None Include="bin\Debug\images\keyboard_arrow_up_black_36x36.png" />
     <None Include="bin\Debug\images\keyboard_arrow_up_black_48x48.png" />
+    <None Include="bin\Debug\scores\Scores.txt" />
     <Content Include="Settings.txt" />
   </ItemGroup>
   <ItemGroup />

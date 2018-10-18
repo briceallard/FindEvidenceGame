@@ -93,7 +93,7 @@ namespace FindEvidenceMaterial
             if (scanalyzer.IsMatch())
             {
                 scanalyzer.Found(sender, e);
-                DeleteGrid();
+                // DeleteGrid();
             }
             else
                 MessageBox.Show("Guess again!");

@@ -199,5 +199,14 @@ namespace FindEvidenceMaterial.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Scores {
+            get {
+                return ResourceManager.GetString("Scores", resourceCulture);
+            }
+        }
     }
 }

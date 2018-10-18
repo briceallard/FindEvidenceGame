@@ -1,0 +1,10 @@
+bwa=234
+dif=342
+twi=343
+wff=241
+eff=104
+efo=302
+fod=100
+fod=300
+tom=109
+bri=185
