@@ -2,22 +2,28 @@
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace FindEvidenceMaterial
 {
     public partial class HighScore : MaterialForm
     {
-        public static string filename = "Scores.txt";
-        public static string path = Path.Combine(Environment.CurrentDirectory, @"scores\", filename);
+        private static string filename = "Scores.txt";
+        private static string path = Path.Combine(Environment.CurrentDirectory, @"scores\", filename);
         public static List<Score> Scores = new List<Score>();
 
         public class Score
         {
             public string Initials { get; set; }
             public int Number { get; set; }
+
+            public Score(string inits, int score)
+            {
+                Initials = inits;
+                Number = score;
+            }
         }
 
         public HighScore()
@@ -30,50 +36,76 @@ namespace FindEvidenceMaterial
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
-        public static void ReadScores()
+        private void HS_Load(object sender, EventArgs e)
         {
-            using (StreamReader sr = new StreamReader(path))
+            ReadScores();
+
+            int i = 0;
+            foreach (var score in Scores)
             {
-                while (sr.Peek() >= 0)
+                var InitLabel = this.Controls.OfType<Label>().Where(lbl => lbl.Name == $"LBL_init{i}").FirstOrDefault();
+                var ScoreLabel = this.Controls.OfType<Label>().Where(lbl => lbl.Name == $"LBL_score{i}").FirstOrDefault();
+                InitLabel.Text = score.Initials;
+                ScoreLabel.Text = score.Number.ToString();
+                i++;
+            }
+        }
+
+        private static void ReadScores()
+        {
+            using (StreamReader streamReader = new StreamReader(path))
+            {
+                while (streamReader.Peek() >= 0)
                 {
-                    string line = sr.ReadLine();
+                    string line = streamReader.ReadLine();
                     string[] lines = line.Split('=');
 
-                    Score score = new Score();
-                    score.Initials = lines[0];
-                    score.Number = Int32.Parse(lines[1]);
+                    Score score = new Score(lines[0], Int32.Parse(lines[1].ToString()));
                     Scores.Add(score);
                 }
             }
             Scores.Sort(delegate (Score x, Score y) { return y.Number.CompareTo(x.Number); });
+
             WriteScores();
         }
 
-        public static void WriteScores()
+        private static void WriteScores()
         {
-            using (TextWriter tw = new StreamWriter(path))
+            using (TextWriter textWriter = new StreamWriter(path))
             {
                 foreach (var item in Scores)
                 {
-                    tw.WriteLine($"{item.Initials}={item.Number.ToString()}");
+                    textWriter.WriteLine($"{item.Initials}={item.Number.ToString()}");
                 }
             }
+            DeleteDuplicates();
         }
 
-        private void HS_Load(object sender, EventArgs e)
+        private static void DeleteDuplicates()
         {
-            using (TextWriter tw = new StreamWriter(path))
-            {
-                var InitLabels = Controls.OfType<Label>().Where(label => label.Name.StartsWith("LBL_init")).ToArray();
-                var ScoreLabels = Controls.OfType<Label>().Where(label => label.Name.StartsWith("LBL_score")).ToArray();
+            FileStream reader = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            FileStream writer = new FileStream(path, FileMode.Open, FileAccess.ReadWrite, FileShare.Read);
+            StreamReader streamReader = new StreamReader(reader);
+            TextWriter textWriter = new StreamWriter(writer);
 
-                //for (int i = 0; i < 10; i++)
-                //{
-                //    var inits = Scores[i].Initials;
-                //    InitLabels[i].Text = inits;
-                //    ScoreLabels[i].Text = Scores[i].Number.ToString();
-                //}
+            string currentline;
+            HashSet<string> previousLines = new HashSet<string>();
+
+            while ((currentline = streamReader.ReadLine()) != null)
+            {
+                if (previousLines.Add(currentline))
+                {
+                    textWriter.WriteLine(currentline);
+                }
             }
+            reader.Close();
+            writer.Close();
+            streamReader.Close();
+        }
+
+        private void BTN_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

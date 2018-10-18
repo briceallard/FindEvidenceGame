@@ -29,7 +29,6 @@ namespace FindEvidenceMaterial
             this.Text = $"Case #{Utilities.CaseNum}";
 
             MessageBox.Show("Choose Evidence type to begin ...");
-            HighScore.ReadScores();
         }
 
         private void BTN_SelectEvidence_Click(object sender, EventArgs e)

@@ -60,6 +60,7 @@
             this.LBL_score2 = new MaterialSkin.Controls.MaterialLabel();
             this.LBL_score1 = new MaterialSkin.Controls.MaterialLabel();
             this.LBL_score0 = new MaterialSkin.Controls.MaterialLabel();
+            this.BTN_Close = new MaterialSkin.Controls.MaterialFlatButton();
             this.SuspendLayout();
             // 
             // LBL_10
@@ -67,7 +68,7 @@
             this.LBL_10.Depth = 0;
             this.LBL_10.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_10.Location = new System.Drawing.Point(12, 515);
+            this.LBL_10.Location = new System.Drawing.Point(20, 485);
             this.LBL_10.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_10.Name = "LBL_10";
             this.LBL_10.Size = new System.Drawing.Size(29, 24);
@@ -80,7 +81,7 @@
             this.LBL_9.Depth = 0;
             this.LBL_9.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_9.Location = new System.Drawing.Point(21, 475);
+            this.LBL_9.Location = new System.Drawing.Point(29, 445);
             this.LBL_9.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_9.Name = "LBL_9";
             this.LBL_9.Size = new System.Drawing.Size(21, 24);
@@ -93,7 +94,7 @@
             this.LBL_8.Depth = 0;
             this.LBL_8.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_8.Location = new System.Drawing.Point(21, 435);
+            this.LBL_8.Location = new System.Drawing.Point(29, 405);
             this.LBL_8.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_8.Name = "LBL_8";
             this.LBL_8.Size = new System.Drawing.Size(21, 24);
@@ -106,7 +107,7 @@
             this.LBL_5.Depth = 0;
             this.LBL_5.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_5.Location = new System.Drawing.Point(21, 315);
+            this.LBL_5.Location = new System.Drawing.Point(29, 285);
             this.LBL_5.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_5.Name = "LBL_5";
             this.LBL_5.Size = new System.Drawing.Size(21, 24);
@@ -119,7 +120,7 @@
             this.LBL_6.Depth = 0;
             this.LBL_6.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_6.Location = new System.Drawing.Point(21, 355);
+            this.LBL_6.Location = new System.Drawing.Point(29, 325);
             this.LBL_6.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_6.Name = "LBL_6";
             this.LBL_6.Size = new System.Drawing.Size(21, 24);
@@ -132,7 +133,7 @@
             this.LBL_7.Depth = 0;
             this.LBL_7.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_7.Location = new System.Drawing.Point(21, 395);
+            this.LBL_7.Location = new System.Drawing.Point(29, 365);
             this.LBL_7.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_7.Name = "LBL_7";
             this.LBL_7.Size = new System.Drawing.Size(21, 24);
@@ -145,7 +146,7 @@
             this.LBL_1.Depth = 0;
             this.LBL_1.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_1.Location = new System.Drawing.Point(21, 155);
+            this.LBL_1.Location = new System.Drawing.Point(29, 125);
             this.LBL_1.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_1.Name = "LBL_1";
             this.LBL_1.Size = new System.Drawing.Size(21, 24);
@@ -158,7 +159,7 @@
             this.LBL_2.Depth = 0;
             this.LBL_2.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_2.Location = new System.Drawing.Point(21, 195);
+            this.LBL_2.Location = new System.Drawing.Point(29, 165);
             this.LBL_2.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_2.Name = "LBL_2";
             this.LBL_2.Size = new System.Drawing.Size(21, 24);
@@ -171,7 +172,7 @@
             this.LBL_3.Depth = 0;
             this.LBL_3.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_3.Location = new System.Drawing.Point(21, 235);
+            this.LBL_3.Location = new System.Drawing.Point(29, 205);
             this.LBL_3.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_3.Name = "LBL_3";
             this.LBL_3.Size = new System.Drawing.Size(21, 24);
@@ -184,7 +185,7 @@
             this.LBL_4.Depth = 0;
             this.LBL_4.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_4.Location = new System.Drawing.Point(21, 275);
+            this.LBL_4.Location = new System.Drawing.Point(29, 245);
             this.LBL_4.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_4.Name = "LBL_4";
             this.LBL_4.Size = new System.Drawing.Size(21, 24);
@@ -197,7 +198,7 @@
             this.LBL_Initials.Depth = 0;
             this.LBL_Initials.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_Initials.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_Initials.Location = new System.Drawing.Point(68, 105);
+            this.LBL_Initials.Location = new System.Drawing.Point(76, 75);
             this.LBL_Initials.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_Initials.Name = "LBL_Initials";
             this.LBL_Initials.Size = new System.Drawing.Size(129, 30);
@@ -210,7 +211,7 @@
             this.LBL_Scores.Depth = 0;
             this.LBL_Scores.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_Scores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_Scores.Location = new System.Drawing.Point(203, 105);
+            this.LBL_Scores.Location = new System.Drawing.Point(211, 75);
             this.LBL_Scores.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_Scores.Name = "LBL_Scores";
             this.LBL_Scores.Size = new System.Drawing.Size(133, 30);
@@ -223,7 +224,7 @@
             this.LBL_init0.Depth = 0;
             this.LBL_init0.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_init0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_init0.Location = new System.Drawing.Point(68, 155);
+            this.LBL_init0.Location = new System.Drawing.Point(76, 125);
             this.LBL_init0.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_init0.Name = "LBL_init0";
             this.LBL_init0.Size = new System.Drawing.Size(129, 24);
@@ -235,7 +236,7 @@
             this.LBL_init1.Depth = 0;
             this.LBL_init1.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_init1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_init1.Location = new System.Drawing.Point(68, 195);
+            this.LBL_init1.Location = new System.Drawing.Point(76, 165);
             this.LBL_init1.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_init1.Name = "LBL_init1";
             this.LBL_init1.Size = new System.Drawing.Size(129, 24);
@@ -247,7 +248,7 @@
             this.LBL_init2.Depth = 0;
             this.LBL_init2.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_init2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_init2.Location = new System.Drawing.Point(68, 235);
+            this.LBL_init2.Location = new System.Drawing.Point(76, 205);
             this.LBL_init2.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_init2.Name = "LBL_init2";
             this.LBL_init2.Size = new System.Drawing.Size(129, 24);
@@ -259,7 +260,7 @@
             this.LBL_init3.Depth = 0;
             this.LBL_init3.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_init3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_init3.Location = new System.Drawing.Point(68, 275);
+            this.LBL_init3.Location = new System.Drawing.Point(76, 245);
             this.LBL_init3.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_init3.Name = "LBL_init3";
             this.LBL_init3.Size = new System.Drawing.Size(129, 24);
@@ -271,7 +272,7 @@
             this.LBL_init4.Depth = 0;
             this.LBL_init4.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_init4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_init4.Location = new System.Drawing.Point(68, 315);
+            this.LBL_init4.Location = new System.Drawing.Point(76, 285);
             this.LBL_init4.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_init4.Name = "LBL_init4";
             this.LBL_init4.Size = new System.Drawing.Size(129, 24);
@@ -283,7 +284,7 @@
             this.LBL_init5.Depth = 0;
             this.LBL_init5.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_init5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_init5.Location = new System.Drawing.Point(68, 355);
+            this.LBL_init5.Location = new System.Drawing.Point(76, 325);
             this.LBL_init5.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_init5.Name = "LBL_init5";
             this.LBL_init5.Size = new System.Drawing.Size(129, 24);
@@ -295,7 +296,7 @@
             this.LBL_init6.Depth = 0;
             this.LBL_init6.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_init6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_init6.Location = new System.Drawing.Point(68, 395);
+            this.LBL_init6.Location = new System.Drawing.Point(76, 365);
             this.LBL_init6.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_init6.Name = "LBL_init6";
             this.LBL_init6.Size = new System.Drawing.Size(129, 24);
@@ -307,7 +308,7 @@
             this.LBL_init7.Depth = 0;
             this.LBL_init7.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_init7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_init7.Location = new System.Drawing.Point(68, 435);
+            this.LBL_init7.Location = new System.Drawing.Point(76, 405);
             this.LBL_init7.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_init7.Name = "LBL_init7";
             this.LBL_init7.Size = new System.Drawing.Size(129, 24);
@@ -319,7 +320,7 @@
             this.LBL_init8.Depth = 0;
             this.LBL_init8.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_init8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_init8.Location = new System.Drawing.Point(68, 475);
+            this.LBL_init8.Location = new System.Drawing.Point(76, 445);
             this.LBL_init8.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_init8.Name = "LBL_init8";
             this.LBL_init8.Size = new System.Drawing.Size(129, 24);
@@ -331,7 +332,7 @@
             this.LBL_init9.Depth = 0;
             this.LBL_init9.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_init9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_init9.Location = new System.Drawing.Point(68, 515);
+            this.LBL_init9.Location = new System.Drawing.Point(76, 485);
             this.LBL_init9.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_init9.Name = "LBL_init9";
             this.LBL_init9.Size = new System.Drawing.Size(129, 24);
@@ -343,7 +344,7 @@
             this.LBL_score9.Depth = 0;
             this.LBL_score9.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_score9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_score9.Location = new System.Drawing.Point(203, 515);
+            this.LBL_score9.Location = new System.Drawing.Point(211, 485);
             this.LBL_score9.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_score9.Name = "LBL_score9";
             this.LBL_score9.Size = new System.Drawing.Size(133, 24);
@@ -355,7 +356,7 @@
             this.LBL_score8.Depth = 0;
             this.LBL_score8.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_score8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_score8.Location = new System.Drawing.Point(203, 475);
+            this.LBL_score8.Location = new System.Drawing.Point(211, 445);
             this.LBL_score8.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_score8.Name = "LBL_score8";
             this.LBL_score8.Size = new System.Drawing.Size(133, 24);
@@ -367,7 +368,7 @@
             this.LBL_score7.Depth = 0;
             this.LBL_score7.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_score7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_score7.Location = new System.Drawing.Point(203, 435);
+            this.LBL_score7.Location = new System.Drawing.Point(211, 405);
             this.LBL_score7.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_score7.Name = "LBL_score7";
             this.LBL_score7.Size = new System.Drawing.Size(133, 24);
@@ -379,7 +380,7 @@
             this.LBL_score6.Depth = 0;
             this.LBL_score6.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_score6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_score6.Location = new System.Drawing.Point(203, 395);
+            this.LBL_score6.Location = new System.Drawing.Point(211, 365);
             this.LBL_score6.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_score6.Name = "LBL_score6";
             this.LBL_score6.Size = new System.Drawing.Size(133, 24);
@@ -391,7 +392,7 @@
             this.LBL_score5.Depth = 0;
             this.LBL_score5.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_score5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_score5.Location = new System.Drawing.Point(203, 355);
+            this.LBL_score5.Location = new System.Drawing.Point(211, 325);
             this.LBL_score5.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_score5.Name = "LBL_score5";
             this.LBL_score5.Size = new System.Drawing.Size(133, 24);
@@ -403,7 +404,7 @@
             this.LBL_score4.Depth = 0;
             this.LBL_score4.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_score4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_score4.Location = new System.Drawing.Point(203, 315);
+            this.LBL_score4.Location = new System.Drawing.Point(211, 285);
             this.LBL_score4.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_score4.Name = "LBL_score4";
             this.LBL_score4.Size = new System.Drawing.Size(133, 24);
@@ -415,7 +416,7 @@
             this.LBL_score3.Depth = 0;
             this.LBL_score3.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_score3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_score3.Location = new System.Drawing.Point(203, 275);
+            this.LBL_score3.Location = new System.Drawing.Point(211, 245);
             this.LBL_score3.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_score3.Name = "LBL_score3";
             this.LBL_score3.Size = new System.Drawing.Size(133, 24);
@@ -427,7 +428,7 @@
             this.LBL_score2.Depth = 0;
             this.LBL_score2.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_score2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_score2.Location = new System.Drawing.Point(203, 235);
+            this.LBL_score2.Location = new System.Drawing.Point(211, 205);
             this.LBL_score2.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_score2.Name = "LBL_score2";
             this.LBL_score2.Size = new System.Drawing.Size(133, 24);
@@ -439,7 +440,7 @@
             this.LBL_score1.Depth = 0;
             this.LBL_score1.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_score1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_score1.Location = new System.Drawing.Point(203, 195);
+            this.LBL_score1.Location = new System.Drawing.Point(211, 165);
             this.LBL_score1.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_score1.Name = "LBL_score1";
             this.LBL_score1.Size = new System.Drawing.Size(133, 24);
@@ -451,18 +452,36 @@
             this.LBL_score0.Depth = 0;
             this.LBL_score0.Font = new System.Drawing.Font("Roboto", 11F);
             this.LBL_score0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LBL_score0.Location = new System.Drawing.Point(203, 155);
+            this.LBL_score0.Location = new System.Drawing.Point(211, 125);
             this.LBL_score0.MouseState = MaterialSkin.MouseState.HOVER;
             this.LBL_score0.Name = "LBL_score0";
             this.LBL_score0.Size = new System.Drawing.Size(133, 24);
             this.LBL_score0.TabIndex = 22;
             this.LBL_score0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // BTN_Close
+            // 
+            this.BTN_Close.AutoSize = true;
+            this.BTN_Close.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BTN_Close.Depth = 0;
+            this.BTN_Close.Icon = null;
+            this.BTN_Close.Location = new System.Drawing.Point(281, 515);
+            this.BTN_Close.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BTN_Close.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BTN_Close.Name = "BTN_Close";
+            this.BTN_Close.Primary = false;
+            this.BTN_Close.Size = new System.Drawing.Size(63, 36);
+            this.BTN_Close.TabIndex = 32;
+            this.BTN_Close.Text = "Close";
+            this.BTN_Close.UseVisualStyleBackColor = true;
+            this.BTN_Close.Click += new System.EventHandler(this.BTN_Close_Click);
+            // 
             // HighScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(381, 565);
+            this.ClientSize = new System.Drawing.Size(375, 560);
+            this.Controls.Add(this.BTN_Close);
             this.Controls.Add(this.LBL_score9);
             this.Controls.Add(this.LBL_score8);
             this.Controls.Add(this.LBL_score7);
@@ -495,12 +514,13 @@
             this.Controls.Add(this.LBL_8);
             this.Controls.Add(this.LBL_9);
             this.Controls.Add(this.LBL_10);
-            this.MaximumSize = new System.Drawing.Size(381, 565);
-            this.MinimumSize = new System.Drawing.Size(381, 565);
+            this.MaximumSize = new System.Drawing.Size(375, 560);
+            this.MinimumSize = new System.Drawing.Size(375, 560);
             this.Name = "HighScore";
             this.Text = "High Scores";
             this.Load += new System.EventHandler(this.HS_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -538,5 +558,6 @@
         private MaterialSkin.Controls.MaterialLabel LBL_score2;
         private MaterialSkin.Controls.MaterialLabel LBL_score1;
         private MaterialSkin.Controls.MaterialLabel LBL_score0;
+        private MaterialSkin.Controls.MaterialFlatButton BTN_Close;
     }
 }
