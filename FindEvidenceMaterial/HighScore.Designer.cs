@@ -40,26 +40,26 @@
             this.LBL_4 = new MaterialSkin.Controls.MaterialLabel();
             this.LBL_Initials = new MaterialSkin.Controls.MaterialLabel();
             this.LBL_Scores = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_init0 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_init1 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_init2 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_init3 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_init4 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_init5 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_init6 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_init7 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_init8 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_init9 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_score9 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_score8 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_score7 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_score6 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_score5 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_score4 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_score3 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_score2 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_score1 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_score0 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // LBL_10
@@ -218,291 +218,271 @@
             this.LBL_Scores.Text = "Scores";
             this.LBL_Scores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel1
+            // LBL_init0
             // 
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(68, 155);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(129, 24);
-            this.materialLabel1.TabIndex = 12;
-            this.materialLabel1.Text = "materialLabel1";
-            this.materialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_init0.Depth = 0;
+            this.LBL_init0.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_init0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_init0.Location = new System.Drawing.Point(68, 155);
+            this.LBL_init0.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_init0.Name = "LBL_init0";
+            this.LBL_init0.Size = new System.Drawing.Size(129, 24);
+            this.LBL_init0.TabIndex = 12;
+            this.LBL_init0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel2
+            // LBL_init1
             // 
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(68, 195);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(129, 24);
-            this.materialLabel2.TabIndex = 13;
-            this.materialLabel2.Text = "materialLabel2";
-            this.materialLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_init1.Depth = 0;
+            this.LBL_init1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_init1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_init1.Location = new System.Drawing.Point(68, 195);
+            this.LBL_init1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_init1.Name = "LBL_init1";
+            this.LBL_init1.Size = new System.Drawing.Size(129, 24);
+            this.LBL_init1.TabIndex = 13;
+            this.LBL_init1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel3
+            // LBL_init2
             // 
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(68, 235);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(129, 24);
-            this.materialLabel3.TabIndex = 14;
-            this.materialLabel3.Text = "materialLabel3";
-            this.materialLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_init2.Depth = 0;
+            this.LBL_init2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_init2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_init2.Location = new System.Drawing.Point(68, 235);
+            this.LBL_init2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_init2.Name = "LBL_init2";
+            this.LBL_init2.Size = new System.Drawing.Size(129, 24);
+            this.LBL_init2.TabIndex = 14;
+            this.LBL_init2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel4
+            // LBL_init3
             // 
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(68, 275);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(129, 24);
-            this.materialLabel4.TabIndex = 15;
-            this.materialLabel4.Text = "materialLabel4";
-            this.materialLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_init3.Depth = 0;
+            this.LBL_init3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_init3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_init3.Location = new System.Drawing.Point(68, 275);
+            this.LBL_init3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_init3.Name = "LBL_init3";
+            this.LBL_init3.Size = new System.Drawing.Size(129, 24);
+            this.LBL_init3.TabIndex = 15;
+            this.LBL_init3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel5
+            // LBL_init4
             // 
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(68, 315);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(129, 24);
-            this.materialLabel5.TabIndex = 16;
-            this.materialLabel5.Text = "materialLabel5";
-            this.materialLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_init4.Depth = 0;
+            this.LBL_init4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_init4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_init4.Location = new System.Drawing.Point(68, 315);
+            this.LBL_init4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_init4.Name = "LBL_init4";
+            this.LBL_init4.Size = new System.Drawing.Size(129, 24);
+            this.LBL_init4.TabIndex = 16;
+            this.LBL_init4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel6
+            // LBL_init5
             // 
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(68, 355);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(129, 24);
-            this.materialLabel6.TabIndex = 17;
-            this.materialLabel6.Text = "materialLabel6";
-            this.materialLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_init5.Depth = 0;
+            this.LBL_init5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_init5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_init5.Location = new System.Drawing.Point(68, 355);
+            this.LBL_init5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_init5.Name = "LBL_init5";
+            this.LBL_init5.Size = new System.Drawing.Size(129, 24);
+            this.LBL_init5.TabIndex = 17;
+            this.LBL_init5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel7
+            // LBL_init6
             // 
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(68, 395);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(129, 24);
-            this.materialLabel7.TabIndex = 18;
-            this.materialLabel7.Text = "materialLabel7";
-            this.materialLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_init6.Depth = 0;
+            this.LBL_init6.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_init6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_init6.Location = new System.Drawing.Point(68, 395);
+            this.LBL_init6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_init6.Name = "LBL_init6";
+            this.LBL_init6.Size = new System.Drawing.Size(129, 24);
+            this.LBL_init6.TabIndex = 18;
+            this.LBL_init6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel8
+            // LBL_init7
             // 
-            this.materialLabel8.Depth = 0;
-            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel8.Location = new System.Drawing.Point(68, 435);
-            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(129, 24);
-            this.materialLabel8.TabIndex = 19;
-            this.materialLabel8.Text = "materialLabel8";
-            this.materialLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_init7.Depth = 0;
+            this.LBL_init7.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_init7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_init7.Location = new System.Drawing.Point(68, 435);
+            this.LBL_init7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_init7.Name = "LBL_init7";
+            this.LBL_init7.Size = new System.Drawing.Size(129, 24);
+            this.LBL_init7.TabIndex = 19;
+            this.LBL_init7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel9
+            // LBL_init8
             // 
-            this.materialLabel9.Depth = 0;
-            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(68, 475);
-            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(129, 24);
-            this.materialLabel9.TabIndex = 20;
-            this.materialLabel9.Text = "materialLabel9";
-            this.materialLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_init8.Depth = 0;
+            this.LBL_init8.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_init8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_init8.Location = new System.Drawing.Point(68, 475);
+            this.LBL_init8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_init8.Name = "LBL_init8";
+            this.LBL_init8.Size = new System.Drawing.Size(129, 24);
+            this.LBL_init8.TabIndex = 20;
+            this.LBL_init8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel10
+            // LBL_init9
             // 
-            this.materialLabel10.Depth = 0;
-            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel10.Location = new System.Drawing.Point(68, 515);
-            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel10.Name = "materialLabel10";
-            this.materialLabel10.Size = new System.Drawing.Size(129, 24);
-            this.materialLabel10.TabIndex = 21;
-            this.materialLabel10.Text = "materialLabel10";
-            this.materialLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_init9.Depth = 0;
+            this.LBL_init9.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_init9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_init9.Location = new System.Drawing.Point(68, 515);
+            this.LBL_init9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_init9.Name = "LBL_init9";
+            this.LBL_init9.Size = new System.Drawing.Size(129, 24);
+            this.LBL_init9.TabIndex = 21;
+            this.LBL_init9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel11
+            // LBL_score9
             // 
-            this.materialLabel11.Depth = 0;
-            this.materialLabel11.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel11.Location = new System.Drawing.Point(203, 515);
-            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel11.Name = "materialLabel11";
-            this.materialLabel11.Size = new System.Drawing.Size(133, 24);
-            this.materialLabel11.TabIndex = 31;
-            this.materialLabel11.Text = "materialLabel11";
-            this.materialLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_score9.Depth = 0;
+            this.LBL_score9.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_score9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_score9.Location = new System.Drawing.Point(203, 515);
+            this.LBL_score9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_score9.Name = "LBL_score9";
+            this.LBL_score9.Size = new System.Drawing.Size(133, 24);
+            this.LBL_score9.TabIndex = 31;
+            this.LBL_score9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel12
+            // LBL_score8
             // 
-            this.materialLabel12.Depth = 0;
-            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel12.Location = new System.Drawing.Point(203, 475);
-            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel12.Name = "materialLabel12";
-            this.materialLabel12.Size = new System.Drawing.Size(133, 24);
-            this.materialLabel12.TabIndex = 30;
-            this.materialLabel12.Text = "materialLabel12";
-            this.materialLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_score8.Depth = 0;
+            this.LBL_score8.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_score8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_score8.Location = new System.Drawing.Point(203, 475);
+            this.LBL_score8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_score8.Name = "LBL_score8";
+            this.LBL_score8.Size = new System.Drawing.Size(133, 24);
+            this.LBL_score8.TabIndex = 30;
+            this.LBL_score8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel13
+            // LBL_score7
             // 
-            this.materialLabel13.Depth = 0;
-            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel13.Location = new System.Drawing.Point(203, 435);
-            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel13.Name = "materialLabel13";
-            this.materialLabel13.Size = new System.Drawing.Size(133, 24);
-            this.materialLabel13.TabIndex = 29;
-            this.materialLabel13.Text = "materialLabel13";
-            this.materialLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_score7.Depth = 0;
+            this.LBL_score7.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_score7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_score7.Location = new System.Drawing.Point(203, 435);
+            this.LBL_score7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_score7.Name = "LBL_score7";
+            this.LBL_score7.Size = new System.Drawing.Size(133, 24);
+            this.LBL_score7.TabIndex = 29;
+            this.LBL_score7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel14
+            // LBL_score6
             // 
-            this.materialLabel14.Depth = 0;
-            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel14.Location = new System.Drawing.Point(203, 395);
-            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel14.Name = "materialLabel14";
-            this.materialLabel14.Size = new System.Drawing.Size(133, 24);
-            this.materialLabel14.TabIndex = 28;
-            this.materialLabel14.Text = "materialLabel14";
-            this.materialLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_score6.Depth = 0;
+            this.LBL_score6.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_score6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_score6.Location = new System.Drawing.Point(203, 395);
+            this.LBL_score6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_score6.Name = "LBL_score6";
+            this.LBL_score6.Size = new System.Drawing.Size(133, 24);
+            this.LBL_score6.TabIndex = 28;
+            this.LBL_score6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel15
+            // LBL_score5
             // 
-            this.materialLabel15.Depth = 0;
-            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel15.Location = new System.Drawing.Point(203, 355);
-            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel15.Name = "materialLabel15";
-            this.materialLabel15.Size = new System.Drawing.Size(133, 24);
-            this.materialLabel15.TabIndex = 27;
-            this.materialLabel15.Text = "materialLabel15";
-            this.materialLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_score5.Depth = 0;
+            this.LBL_score5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_score5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_score5.Location = new System.Drawing.Point(203, 355);
+            this.LBL_score5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_score5.Name = "LBL_score5";
+            this.LBL_score5.Size = new System.Drawing.Size(133, 24);
+            this.LBL_score5.TabIndex = 27;
+            this.LBL_score5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel16
+            // LBL_score4
             // 
-            this.materialLabel16.Depth = 0;
-            this.materialLabel16.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel16.Location = new System.Drawing.Point(203, 315);
-            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel16.Name = "materialLabel16";
-            this.materialLabel16.Size = new System.Drawing.Size(133, 24);
-            this.materialLabel16.TabIndex = 26;
-            this.materialLabel16.Text = "materialLabel16";
-            this.materialLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_score4.Depth = 0;
+            this.LBL_score4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_score4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_score4.Location = new System.Drawing.Point(203, 315);
+            this.LBL_score4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_score4.Name = "LBL_score4";
+            this.LBL_score4.Size = new System.Drawing.Size(133, 24);
+            this.LBL_score4.TabIndex = 26;
+            this.LBL_score4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel17
+            // LBL_score3
             // 
-            this.materialLabel17.Depth = 0;
-            this.materialLabel17.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel17.Location = new System.Drawing.Point(203, 275);
-            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel17.Name = "materialLabel17";
-            this.materialLabel17.Size = new System.Drawing.Size(133, 24);
-            this.materialLabel17.TabIndex = 25;
-            this.materialLabel17.Text = "materialLabel17";
-            this.materialLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_score3.Depth = 0;
+            this.LBL_score3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_score3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_score3.Location = new System.Drawing.Point(203, 275);
+            this.LBL_score3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_score3.Name = "LBL_score3";
+            this.LBL_score3.Size = new System.Drawing.Size(133, 24);
+            this.LBL_score3.TabIndex = 25;
+            this.LBL_score3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel18
+            // LBL_score2
             // 
-            this.materialLabel18.Depth = 0;
-            this.materialLabel18.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel18.Location = new System.Drawing.Point(203, 235);
-            this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel18.Name = "materialLabel18";
-            this.materialLabel18.Size = new System.Drawing.Size(133, 24);
-            this.materialLabel18.TabIndex = 24;
-            this.materialLabel18.Text = "materialLabel18";
-            this.materialLabel18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_score2.Depth = 0;
+            this.LBL_score2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_score2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_score2.Location = new System.Drawing.Point(203, 235);
+            this.LBL_score2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_score2.Name = "LBL_score2";
+            this.LBL_score2.Size = new System.Drawing.Size(133, 24);
+            this.LBL_score2.TabIndex = 24;
+            this.LBL_score2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel19
+            // LBL_score1
             // 
-            this.materialLabel19.Depth = 0;
-            this.materialLabel19.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel19.Location = new System.Drawing.Point(203, 195);
-            this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel19.Name = "materialLabel19";
-            this.materialLabel19.Size = new System.Drawing.Size(133, 24);
-            this.materialLabel19.TabIndex = 23;
-            this.materialLabel19.Text = "materialLabel19";
-            this.materialLabel19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_score1.Depth = 0;
+            this.LBL_score1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_score1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_score1.Location = new System.Drawing.Point(203, 195);
+            this.LBL_score1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_score1.Name = "LBL_score1";
+            this.LBL_score1.Size = new System.Drawing.Size(133, 24);
+            this.LBL_score1.TabIndex = 23;
+            this.LBL_score1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // materialLabel20
+            // LBL_score0
             // 
-            this.materialLabel20.Depth = 0;
-            this.materialLabel20.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel20.Location = new System.Drawing.Point(203, 155);
-            this.materialLabel20.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel20.Name = "materialLabel20";
-            this.materialLabel20.Size = new System.Drawing.Size(133, 24);
-            this.materialLabel20.TabIndex = 22;
-            this.materialLabel20.Text = "materialLabel20";
-            this.materialLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_score0.Depth = 0;
+            this.LBL_score0.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_score0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_score0.Location = new System.Drawing.Point(203, 155);
+            this.LBL_score0.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_score0.Name = "LBL_score0";
+            this.LBL_score0.Size = new System.Drawing.Size(133, 24);
+            this.LBL_score0.TabIndex = 22;
+            this.LBL_score0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HighScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 565);
-            this.Controls.Add(this.materialLabel11);
-            this.Controls.Add(this.materialLabel12);
-            this.Controls.Add(this.materialLabel13);
-            this.Controls.Add(this.materialLabel14);
-            this.Controls.Add(this.materialLabel15);
-            this.Controls.Add(this.materialLabel16);
-            this.Controls.Add(this.materialLabel17);
-            this.Controls.Add(this.materialLabel18);
-            this.Controls.Add(this.materialLabel19);
-            this.Controls.Add(this.materialLabel20);
-            this.Controls.Add(this.materialLabel10);
-            this.Controls.Add(this.materialLabel9);
-            this.Controls.Add(this.materialLabel8);
-            this.Controls.Add(this.materialLabel7);
-            this.Controls.Add(this.materialLabel6);
-            this.Controls.Add(this.materialLabel5);
-            this.Controls.Add(this.materialLabel4);
-            this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.materialLabel2);
-            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.LBL_score9);
+            this.Controls.Add(this.LBL_score8);
+            this.Controls.Add(this.LBL_score7);
+            this.Controls.Add(this.LBL_score6);
+            this.Controls.Add(this.LBL_score5);
+            this.Controls.Add(this.LBL_score4);
+            this.Controls.Add(this.LBL_score3);
+            this.Controls.Add(this.LBL_score2);
+            this.Controls.Add(this.LBL_score1);
+            this.Controls.Add(this.LBL_score0);
+            this.Controls.Add(this.LBL_init9);
+            this.Controls.Add(this.LBL_init8);
+            this.Controls.Add(this.LBL_init7);
+            this.Controls.Add(this.LBL_init6);
+            this.Controls.Add(this.LBL_init5);
+            this.Controls.Add(this.LBL_init4);
+            this.Controls.Add(this.LBL_init3);
+            this.Controls.Add(this.LBL_init2);
+            this.Controls.Add(this.LBL_init1);
+            this.Controls.Add(this.LBL_init0);
             this.Controls.Add(this.LBL_Scores);
             this.Controls.Add(this.LBL_Initials);
             this.Controls.Add(this.LBL_1);
@@ -519,6 +499,7 @@
             this.MinimumSize = new System.Drawing.Size(381, 565);
             this.Name = "HighScore";
             this.Text = "High Scores";
+            this.Load += new System.EventHandler(this.HS_Load);
             this.ResumeLayout(false);
 
         }
@@ -537,25 +518,25 @@
         private MaterialSkin.Controls.MaterialLabel LBL_4;
         private MaterialSkin.Controls.MaterialLabel LBL_Initials;
         private MaterialSkin.Controls.MaterialLabel LBL_Scores;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private MaterialSkin.Controls.MaterialLabel materialLabel5;
-        private MaterialSkin.Controls.MaterialLabel materialLabel6;
-        private MaterialSkin.Controls.MaterialLabel materialLabel7;
-        private MaterialSkin.Controls.MaterialLabel materialLabel8;
-        private MaterialSkin.Controls.MaterialLabel materialLabel9;
-        private MaterialSkin.Controls.MaterialLabel materialLabel10;
-        private MaterialSkin.Controls.MaterialLabel materialLabel11;
-        private MaterialSkin.Controls.MaterialLabel materialLabel12;
-        private MaterialSkin.Controls.MaterialLabel materialLabel13;
-        private MaterialSkin.Controls.MaterialLabel materialLabel14;
-        private MaterialSkin.Controls.MaterialLabel materialLabel15;
-        private MaterialSkin.Controls.MaterialLabel materialLabel16;
-        private MaterialSkin.Controls.MaterialLabel materialLabel17;
-        private MaterialSkin.Controls.MaterialLabel materialLabel18;
-        private MaterialSkin.Controls.MaterialLabel materialLabel19;
-        private MaterialSkin.Controls.MaterialLabel materialLabel20;
+        private MaterialSkin.Controls.MaterialLabel LBL_init0;
+        private MaterialSkin.Controls.MaterialLabel LBL_init1;
+        private MaterialSkin.Controls.MaterialLabel LBL_init2;
+        private MaterialSkin.Controls.MaterialLabel LBL_init3;
+        private MaterialSkin.Controls.MaterialLabel LBL_init4;
+        private MaterialSkin.Controls.MaterialLabel LBL_init5;
+        private MaterialSkin.Controls.MaterialLabel LBL_init6;
+        private MaterialSkin.Controls.MaterialLabel LBL_init7;
+        private MaterialSkin.Controls.MaterialLabel LBL_init8;
+        private MaterialSkin.Controls.MaterialLabel LBL_init9;
+        private MaterialSkin.Controls.MaterialLabel LBL_score9;
+        private MaterialSkin.Controls.MaterialLabel LBL_score8;
+        private MaterialSkin.Controls.MaterialLabel LBL_score7;
+        private MaterialSkin.Controls.MaterialLabel LBL_score6;
+        private MaterialSkin.Controls.MaterialLabel LBL_score5;
+        private MaterialSkin.Controls.MaterialLabel LBL_score4;
+        private MaterialSkin.Controls.MaterialLabel LBL_score3;
+        private MaterialSkin.Controls.MaterialLabel LBL_score2;
+        private MaterialSkin.Controls.MaterialLabel LBL_score1;
+        private MaterialSkin.Controls.MaterialLabel LBL_score0;
     }
 }
