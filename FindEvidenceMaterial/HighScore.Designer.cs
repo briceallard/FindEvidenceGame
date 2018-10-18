@@ -482,7 +482,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(365, 565);
+            this.ClientSize = new System.Drawing.Size(381, 565);
             this.Controls.Add(this.materialLabel11);
             this.Controls.Add(this.materialLabel12);
             this.Controls.Add(this.materialLabel13);
@@ -515,8 +515,8 @@
             this.Controls.Add(this.LBL_8);
             this.Controls.Add(this.LBL_9);
             this.Controls.Add(this.LBL_10);
-            this.MaximumSize = new System.Drawing.Size(365, 565);
-            this.MinimumSize = new System.Drawing.Size(365, 565);
+            this.MaximumSize = new System.Drawing.Size(381, 565);
+            this.MinimumSize = new System.Drawing.Size(381, 565);
             this.Name = "HighScore";
             this.Text = "High Scores";
             this.ResumeLayout(false);

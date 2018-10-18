@@ -34,6 +34,7 @@
             this.PB_MagGlass = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.GB_Upload = new System.Windows.Forms.GroupBox();
+            this.BTN_Highscore = new MaterialSkin.Controls.MaterialFlatButton();
             this.label1 = new System.Windows.Forms.Label();
             this.BTN_Upload = new MaterialSkin.Controls.MaterialFlatButton();
             this.LBL_Path = new MaterialSkin.Controls.MaterialLabel();
@@ -47,7 +48,6 @@
             this.TB_GRIDY = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.TB_GRIDX = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.LBL_GridSize = new MaterialSkin.Controls.MaterialLabel();
-            this.BTN_Highscore = new MaterialSkin.Controls.MaterialFlatButton();
             this.GB_Instructions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Fingerprint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_MagGlass)).BeginInit();
@@ -109,7 +109,6 @@
             // 
             // GB_Upload
             // 
-            this.GB_Upload.Controls.Add(this.BTN_Highscore);
             this.GB_Upload.Controls.Add(this.label1);
             this.GB_Upload.Controls.Add(this.BTN_Upload);
             this.GB_Upload.Controls.Add(this.LBL_Path);
@@ -124,6 +123,23 @@
             this.GB_Upload.TabIndex = 1;
             this.GB_Upload.TabStop = false;
             this.GB_Upload.Text = "Upload Data";
+            // 
+            // BTN_Highscore
+            // 
+            this.BTN_Highscore.AutoSize = true;
+            this.BTN_Highscore.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BTN_Highscore.Depth = 0;
+            this.BTN_Highscore.Icon = null;
+            this.BTN_Highscore.Location = new System.Drawing.Point(232, 66);
+            this.BTN_Highscore.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BTN_Highscore.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BTN_Highscore.Name = "BTN_Highscore";
+            this.BTN_Highscore.Primary = false;
+            this.BTN_Highscore.Size = new System.Drawing.Size(108, 36);
+            this.BTN_Highscore.TabIndex = 7;
+            this.BTN_Highscore.Text = "High Scores";
+            this.BTN_Highscore.UseVisualStyleBackColor = true;
+            this.BTN_Highscore.Click += new System.EventHandler(this.BTN_Highscore_Click);
             // 
             // label1
             // 
@@ -202,6 +218,7 @@
             // 
             // GB_Start
             // 
+            this.GB_Start.Controls.Add(this.BTN_Highscore);
             this.GB_Start.Controls.Add(this.BTN_Close);
             this.GB_Start.Controls.Add(this.BTN_Start);
             this.GB_Start.Controls.Add(this.LBL_MaxSize);
@@ -257,7 +274,7 @@
             // 
             this.LBL_MaxSize.AutoSize = true;
             this.LBL_MaxSize.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_MaxSize.Location = new System.Drawing.Point(64, 67);
+            this.LBL_MaxSize.Location = new System.Drawing.Point(19, 67);
             this.LBL_MaxSize.Name = "LBL_MaxSize";
             this.LBL_MaxSize.Size = new System.Drawing.Size(138, 15);
             this.LBL_MaxSize.TabIndex = 4;
@@ -324,23 +341,6 @@
             this.LBL_GridSize.Size = new System.Drawing.Size(161, 19);
             this.LBL_GridSize.TabIndex = 0;
             this.LBL_GridSize.Text = "Enter Search Grid Size:";
-            // 
-            // BTN_Highscore
-            // 
-            this.BTN_Highscore.AutoSize = true;
-            this.BTN_Highscore.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BTN_Highscore.Depth = 0;
-            this.BTN_Highscore.Icon = null;
-            this.BTN_Highscore.Location = new System.Drawing.Point(294, 67);
-            this.BTN_Highscore.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BTN_Highscore.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BTN_Highscore.Name = "BTN_Highscore";
-            this.BTN_Highscore.Primary = false;
-            this.BTN_Highscore.Size = new System.Drawing.Size(108, 36);
-            this.BTN_Highscore.TabIndex = 7;
-            this.BTN_Highscore.Text = "High Scores";
-            this.BTN_Highscore.UseVisualStyleBackColor = true;
-            this.BTN_Highscore.Click += new System.EventHandler(this.BTN_Highscore_Click);
             // 
             // WelcomeForm
             // 
