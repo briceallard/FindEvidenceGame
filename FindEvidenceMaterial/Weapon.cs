@@ -23,7 +23,7 @@ namespace FindEvidenceMaterial
         public override void Found(object sender, EventArgs e)
         {
             Button button = ((Button)sender);
-            button.BackgroundImage = FindEvidenceMaterial.Properties.Resources.icons8_army_knife_36x36;
+            button.BackgroundImage = Properties.Resources.icons8_army_knife_36x36;
             button.BackgroundImageLayout = ImageLayout.Center;
             IsFound = true;
             MessageBox.Show(FOUND_MESSAGE(), FOUND_TITLE, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
