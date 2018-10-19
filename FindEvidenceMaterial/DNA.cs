@@ -23,6 +23,7 @@ namespace FindEvidenceMaterial
             Button button = ((Button)sender);
             button.BackgroundImage = FindEvidenceMaterial.Properties.Resources.icons8_dna_helix_36x36;
             button.BackgroundImageLayout = ImageLayout.Center;
+            IsFound = true;
             MessageBox.Show(FOUND_MESSAGE(), FOUND_TITLE, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 

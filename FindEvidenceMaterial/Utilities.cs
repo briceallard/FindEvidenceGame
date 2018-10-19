@@ -99,5 +99,21 @@ namespace FindEvidenceMaterial
                 return "FOUND";
             }
         }
+
+        public static string WIN_MESSAGE
+        {
+            get
+            {
+                return "Congratualations!\n\nYou found all the evidence in ";
+            }
+        }
+
+        public static string WIN_TITLE
+        {
+            get
+            {
+                return "WINNER";
+            }
+        }
     }
 }

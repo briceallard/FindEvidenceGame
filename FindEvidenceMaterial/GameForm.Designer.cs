@@ -35,15 +35,16 @@
             this.RB_Fingerprint = new MaterialSkin.Controls.MaterialRadioButton();
             this.RB_Weapon = new MaterialSkin.Controls.MaterialRadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_CluesFound = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblStopWatch = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BTN_Exit = new MaterialSkin.Controls.MaterialRaisedButton();
             this.BTN_StartNew = new MaterialSkin.Controls.MaterialFlatButton();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -135,9 +136,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.materialLabel6);
+            this.groupBox2.Controls.Add(this.LBL_CluesFound);
             this.groupBox2.Controls.Add(this.materialLabel5);
-            this.groupBox2.Controls.Add(this.materialLabel4);
+            this.groupBox2.Controls.Add(this.lblStopWatch);
             this.groupBox2.Controls.Add(this.materialLabel3);
             this.groupBox2.Controls.Add(this.materialLabel2);
             this.groupBox2.Controls.Add(this.materialLabel1);
@@ -149,18 +150,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Statistics";
             // 
-            // materialLabel6
+            // LBL_CluesFound
             // 
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(6, 137);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(154, 23);
-            this.materialLabel6.TabIndex = 9;
-            this.materialLabel6.Text = "0 / 3";
-            this.materialLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_CluesFound.Depth = 0;
+            this.LBL_CluesFound.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_CluesFound.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_CluesFound.Location = new System.Drawing.Point(6, 137);
+            this.LBL_CluesFound.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_CluesFound.Name = "LBL_CluesFound";
+            this.LBL_CluesFound.Size = new System.Drawing.Size(154, 23);
+            this.LBL_CluesFound.TabIndex = 9;
+            this.LBL_CluesFound.Text = "0 / 3";
+            this.LBL_CluesFound.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // materialLabel5
             // 
@@ -174,18 +175,18 @@
             this.materialLabel5.TabIndex = 8;
             this.materialLabel5.Text = "Clues Found:";
             // 
-            // materialLabel4
+            // lblStopWatch
             // 
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(6, 91);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(154, 23);
-            this.materialLabel4.TabIndex = 7;
-            this.materialLabel4.Text = "0";
-            this.materialLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblStopWatch.Depth = 0;
+            this.lblStopWatch.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblStopWatch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblStopWatch.Location = new System.Drawing.Point(6, 91);
+            this.lblStopWatch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblStopWatch.Name = "lblStopWatch";
+            this.lblStopWatch.Size = new System.Drawing.Size(154, 23);
+            this.lblStopWatch.TabIndex = 7;
+            this.lblStopWatch.Text = "0";
+            this.lblStopWatch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // materialLabel3
             // 
@@ -268,6 +269,11 @@
             this.BTN_StartNew.Text = "Start New Game";
             this.BTN_StartNew.UseVisualStyleBackColor = true;
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorker_DoWork);
+            this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bgWorker_ProgressChanged);
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,6 +290,7 @@
             this.Name = "GameForm";
             this.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
             this.Text = "GameForm";
+            this.Load += new System.EventHandler(this.GameForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -297,11 +304,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private MaterialSkin.Controls.MaterialFlatButton BTN_SelectEvidence;
         private System.Windows.Forms.GroupBox groupBox2;
-        private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private MaterialSkin.Controls.MaterialLabel LBL_CluesFound;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private System.Windows.Forms.GroupBox groupBox3;
         private MaterialSkin.Controls.MaterialRaisedButton BTN_Exit;
@@ -309,5 +315,7 @@
         public MaterialSkin.Controls.MaterialRadioButton RB_Weapon;
         public MaterialSkin.Controls.MaterialRadioButton RB_Fingerprint;
         public MaterialSkin.Controls.MaterialRadioButton RB_Dna;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        public MaterialSkin.Controls.MaterialLabel lblStopWatch;
     }
 }

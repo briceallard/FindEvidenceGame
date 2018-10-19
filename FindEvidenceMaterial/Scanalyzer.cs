@@ -14,6 +14,8 @@ namespace FindEvidenceMaterial
 
         public abstract void Found(object sender, EventArgs e);
 
+        public static bool IsFound { get; set; }
+
         public bool IsMatch()
         {
             return (Guess.X == Clue.X && Guess.Y == Clue.Y) ? true : false;
