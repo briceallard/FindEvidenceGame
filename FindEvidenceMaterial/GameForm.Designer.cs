@@ -39,7 +39,7 @@
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.lblStopWatch = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.LBL_Guesses = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BTN_Exit = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -140,7 +140,7 @@
             this.groupBox2.Controls.Add(this.materialLabel5);
             this.groupBox2.Controls.Add(this.lblStopWatch);
             this.groupBox2.Controls.Add(this.materialLabel3);
-            this.groupBox2.Controls.Add(this.materialLabel2);
+            this.groupBox2.Controls.Add(this.LBL_Guesses);
             this.groupBox2.Controls.Add(this.materialLabel1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(13, 260);
@@ -198,20 +198,20 @@
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(154, 23);
             this.materialLabel3.TabIndex = 6;
-            this.materialLabel3.Text = "Current Score:";
+            this.materialLabel3.Text = "Current Time:";
             // 
-            // materialLabel2
+            // LBL_Guesses
             // 
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(6, 45);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(154, 23);
-            this.materialLabel2.TabIndex = 5;
-            this.materialLabel2.Text = "0";
-            this.materialLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_Guesses.Depth = 0;
+            this.LBL_Guesses.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LBL_Guesses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_Guesses.Location = new System.Drawing.Point(6, 45);
+            this.LBL_Guesses.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LBL_Guesses.Name = "LBL_Guesses";
+            this.LBL_Guesses.Size = new System.Drawing.Size(154, 23);
+            this.LBL_Guesses.TabIndex = 5;
+            this.LBL_Guesses.Text = "0";
+            this.LBL_Guesses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // materialLabel1
             // 
@@ -223,7 +223,7 @@
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(154, 23);
             this.materialLabel1.TabIndex = 4;
-            this.materialLabel1.Text = "High Score:";
+            this.materialLabel1.Text = "Current Guess:";
             // 
             // groupBox3
             // 
@@ -305,7 +305,7 @@
         private MaterialSkin.Controls.MaterialFlatButton BTN_SelectEvidence;
         private System.Windows.Forms.GroupBox groupBox2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel LBL_Guesses;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel LBL_CluesFound;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;

@@ -25,6 +25,7 @@ namespace FindEvidenceMaterial
         public static int Y { get => y; set => y = value; }
 
         int CluesFound = 0;
+        int Guesses = 0;
 
         public GameForm()
         {
@@ -117,6 +118,7 @@ namespace FindEvidenceMaterial
             int x = Int32.Parse(coords[0]);
             int y = Int32.Parse(coords[1]);
             Guess guess = new Guess(x, y);
+            Guesses++;
 
             if (scanalyzer.IsMatch())
             {
@@ -136,8 +138,10 @@ namespace FindEvidenceMaterial
                     GameForm_IsWon();
             }
             else
+            {
                 MessageBox.Show("Guess again!");
-
+                LBL_Guesses.Text = Guesses.ToString();
+            }
             //MessageBox.Show($"You clicked on:\nX: {x} Y: {y}");
         }
 

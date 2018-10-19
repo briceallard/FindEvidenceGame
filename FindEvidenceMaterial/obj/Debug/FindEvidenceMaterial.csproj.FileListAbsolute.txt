@@ -24,3 +24,4 @@ C:\Users\brice\source\repos\FindEvidenceMaterial\FindEvidenceMaterial\obj\Debug\
 C:\Users\brice\source\repos\FindEvidenceMaterial\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.csproj.CopyComplete
 C:\Users\brice\source\repos\FindEvidenceMaterial\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.exe
 C:\Users\brice\source\repos\FindEvidenceMaterial\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.pdb
+C:\Users\brice\source\repos\FindEvidenceGame\FindEvidenceMaterial\obj\Debug\FindEvidenceMaterial.HighScore.resources
