@@ -1,14 +1,5 @@
-﻿using MaterialSkin;
-using MaterialSkin.Controls;
-using MaterialSkin.Animations;
-using System;
+﻿using System;
 using System.Drawing;
-using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
-using System.Diagnostics;
 
 namespace FindEvidenceMaterial
 {
@@ -24,20 +15,25 @@ namespace FindEvidenceMaterial
 
         public static bool IsFound { get; set; }
 
-        public Bitmap GetDirection()
+        public Bitmap GetDirection(int guessCount)
         {
             Bitmap Up = Properties.Resources.keyboard_arrow_up_black_36x36;
             Bitmap Down = Properties.Resources.keyboard_arrow_down_black_36x36;
             Bitmap Left = Properties.Resources.keyboard_arrow_left_black_36x36;
             Bitmap Right = Properties.Resources.keyboard_arrow_right_black_36x36;
 
-            int xd = Guess.X - Clue.X;
-            int yd = Guess.Y - Clue.Y;
+            //int xd = Guess.X - Clue.X;
+            //int yd = Guess.Y - Clue.Y;
 
-            if(Math.Abs(xd) <= Math.Abs(yd))
-                return (xd <= 0) ? Left : Right;
+            //if (Math.Abs(xd) < Math.Abs(yd))
+            //    return (xd < 0) ? Right : Left;
+            //else
+            //    return (yd < 0) ? Down : Up;
+
+            if (guessCount % 2 == 0)
+                return Guess.X > Clue.X ? Up : Down;
             else
-                return (yd <= 0) ? Down : Up;
+                return Guess.Y > Clue.Y ? Left : Right;
         }
 
         public bool IsMatch()

@@ -268,6 +268,7 @@
             this.BTN_StartNew.TabIndex = 0;
             this.BTN_StartNew.Text = "Start New Game";
             this.BTN_StartNew.UseVisualStyleBackColor = true;
+            this.BTN_StartNew.Click += new System.EventHandler(this.BTN_StartNew_Click);
             // 
             // backgroundWorker1
             // 

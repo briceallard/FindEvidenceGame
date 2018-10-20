@@ -5,9 +5,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.ComponentModel;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
+using System.Linq;
 using System.Diagnostics;
 
 namespace FindEvidenceMaterial
@@ -81,7 +79,6 @@ namespace FindEvidenceMaterial
             int start_x = 88;
             int start_y = 200;
 
-
             for (int i = 0; i < x; i++)
             {
                 for (int j = 0; j < y; j++)
@@ -97,17 +94,6 @@ namespace FindEvidenceMaterial
                     tmpButton[i, j].FlatAppearance.BorderColor = Color.Black;
                     tmpButton[i, j].Click += new EventHandler(BTN_Grid_Click);
                     this.Controls.Add(tmpButton[i, j]);
-                }
-            }
-        }
-
-        private void DeleteGrid()
-        {
-            for (int i = 0; i < x; i++)
-            {
-                for (int j = 0; j < y; j++)
-                {
-                    this.Controls.Remove(tmpButton[i, j]);
                 }
             }
         }
@@ -132,6 +118,7 @@ namespace FindEvidenceMaterial
                     RB_Dna.Enabled = false;
 
                 CluesFound++;
+                HideHintImages();
                 LBL_CluesFound.Text = $"{CluesFound} / 3";
 
                 if (CheckWin())
@@ -139,7 +126,7 @@ namespace FindEvidenceMaterial
             }
             else
             {
-                ((Button)sender).BackgroundImage = scanalyzer.GetDirection();
+                ((Button)sender).BackgroundImage = scanalyzer.GetDirection(Guesses);
                 ((Button)sender).BackgroundImageLayout = ImageLayout.Center;
                 //MessageBox.Show("Guess again!");
                 LBL_Guesses.Text = Guesses.ToString();
@@ -150,6 +137,19 @@ namespace FindEvidenceMaterial
         private bool CheckWin()
         {
             return (!RB_Weapon.Enabled && !RB_Fingerprint.Enabled && !RB_Dna.Enabled) ? true : false;
+        }
+
+        private void HideHintImages()
+        {
+            foreach(var button in Controls.OfType<Button>())
+            {
+                string[] coords = button.Tag.ToString().Split(',');
+                int x = Int32.Parse(coords[0]);
+                int y = Int32.Parse(coords[1]);
+
+                if (Clue.X != x && Clue.Y != y)
+                    button.BackgroundImage = null;
+            }
         }
 
         void bgWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -176,5 +176,9 @@ namespace FindEvidenceMaterial
             Application.Exit();
         }
 
+        private void BTN_StartNew_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }
