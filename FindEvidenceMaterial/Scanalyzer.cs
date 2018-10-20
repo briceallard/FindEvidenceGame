@@ -34,10 +34,10 @@ namespace FindEvidenceMaterial
             int xd = Guess.X - Clue.X;
             int yd = Guess.Y - Clue.Y;
 
-            if(Math.Abs(xd) < Math.Abs(yd))
-                return (xd < 0) ? Left : Right;
+            if(Math.Abs(xd) <= Math.Abs(yd))
+                return (xd <= 0) ? Left : Right;
             else
-                return (yd < 0) ? Down : Up;
+                return (yd <= 0) ? Down : Up;
         }
 
         public bool IsMatch()

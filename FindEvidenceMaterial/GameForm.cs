@@ -139,7 +139,9 @@ namespace FindEvidenceMaterial
             }
             else
             {
-                MessageBox.Show("Guess again!");
+                ((Button)sender).BackgroundImage = scanalyzer.GetDirection();
+                ((Button)sender).BackgroundImageLayout = ImageLayout.Center;
+                //MessageBox.Show("Guess again!");
                 LBL_Guesses.Text = Guesses.ToString();
             }
             //MessageBox.Show($"You clicked on:\nX: {x} Y: {y}");
