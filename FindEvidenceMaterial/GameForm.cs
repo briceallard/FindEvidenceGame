@@ -103,13 +103,39 @@ namespace FindEvidenceMaterial
          **/
         private void BTN_SelectEvidence_Click(object sender, EventArgs e)
         {
+            int type = 0;
+
             // Assign scanalyzer to appropriate type
             if (RB_Weapon.Checked)
-                scanalyzer = new Weapon();
+                type = 1;
             else if (RB_Fingerprint.Checked)
-                scanalyzer = new Fingerprint();
+                type = 2;
             else
-                scanalyzer = new DNA();
+                type = 3;
+
+            switch (type)
+            {
+                case 0:
+                    MessageBox.Show("Select evidence");
+                    break;
+                case 1:
+                    scanalyzer = new Weapon();
+                    break;
+                case 2:
+                    scanalyzer = new Fingerprint();
+                    break;
+                case 3:
+                    scanalyzer = new DNA();
+                    break;
+            }
+
+            //// Assign scanalyzer to appropriate type
+            //if (RB_Weapon.Checked)
+            //    scanalyzer = new Weapon();
+            //else if (RB_Fingerprint.Checked)
+            //    scanalyzer = new Fingerprint();
+            //else
+            //    scanalyzer = new DNA();
 
             HideHintImages();           // Erase previously given clues
             scanalyzer.GenerateClue();  // Get coordinates for clue
