@@ -90,12 +90,6 @@ namespace FindEvidenceMaterial
          * @param: none
          * @return: string
          **/
-        public static string FOUND_TITLE
-        {
-            get
-            {
-                return "FOUND";
-            }
-        }
+        public static string FOUND_TITLE => "FOUND";
     }
 }

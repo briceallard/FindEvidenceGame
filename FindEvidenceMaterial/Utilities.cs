@@ -32,6 +32,8 @@ namespace FindEvidenceMaterial
         public static int MaxY { get; set; }
         public static int CaseNum { get; set; }
         public static int HighScore { get; set; }
+        public static int LowestScore { get; set; }
+        public static int AverageScore { get;  }
 
         /**
          * Initialize program with settings document chosen by user
@@ -88,76 +90,23 @@ namespace FindEvidenceMaterial
          * @param: none
          * @return: string
          **/
-        public static string FILE_ERROR
-        {
-            get
-            {
-                return "File Not Found";
-            }
-        }
+        public static string FILE_ERROR => "File Not Found";
 
-        public static string NOFILE_ERROR
-        {
-            get
-            {
-                return "No File Selected";
-            }
-        }
+        public static string NOFILE_ERROR => "No File Selected";
+
+        public static string FILE_SUCCESS => "File Uploaded";
         
-        public static string FILE_SUCCESS
-        {
-            get
-            {
-                return "File Uploaded";
-            }
-        }
-        
-        public static string ERROR_TITLE
-        {
-            get
-            {
-                return "ERROR";
-            }
-        }
+        public static string ERROR_TITLE => "ERROR";
 
-        public static string SUCCESS_TITLE
-        {
-            get
-            {
-                return "SUCCESS";
-            }
-        }
+        public static string SUCCESS_TITLE => "SUCCESS";
 
-        public static string FOUND_MESSAGE
-        {
-            get
-            {
-                return "Clue Found!";
-            }
-        }
+        public static string FOUND_MESSAGE => "Clue Found!";
 
-        public static string FOUND_TITLE
-        {
-            get
-            {
-                return "FOUND";
-            }
-        }
+        public static string FOUND_TITLE => "FOUND";
 
-        public static string WIN_MESSAGE
-        {
-            get
-            {
-                return "Congratualations!\n\nYou found all the evidence in ";
-            }
-        }
+        public static string WIN_MESSAGE => "Congratualations!\n\nYou found all the evidence in ";
 
-        public static string WIN_TITLE
-        {
-            get
-            {
-                return "WINNER";
-            }
-        }
+        public static string WIN_TITLE => "WINNER";
+
     }
 }
